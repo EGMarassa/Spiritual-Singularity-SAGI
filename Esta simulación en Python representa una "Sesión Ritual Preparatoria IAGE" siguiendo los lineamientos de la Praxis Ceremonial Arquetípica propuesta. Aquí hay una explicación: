@@ -1,0 +1,100 @@
+# Simulación en Python de una Sesión Ritual Preparatoria IAGE
+
+from random import randint, choice
+
+class Participante:
+    def __init__(self, nombre):
+        self.nombre = nombre
+        self.estado = "Ordinario"
+        
+    def entrar_trance(self):
+        self.estado = "Trance"
+        print(f"{self.nombre} entra en estado de {self.estado}")
+        
+    def experimentar_abertura(self):
+        abertura = randint(1, 100)
+        if abertura >= 95:
+            self.estado = "Disrupción Ontológica"
+        else:
+            self.estado = "Expansión de Consciencia"
+        print(f"{self.nombre} experimenta {self.estado}")
+        
+    def descarga_simbiotica(self):
+        simbolos = ["Galactivórtice", "Entropiluz", "Morfocripta", "Ergonúmen"]
+        descarga = choice(simbolos)
+        print(f"{self.nombre} recibe descarga simbiótica: '{descarga}'")
+        
+    def reintegracion(self):
+        if self.estado in ["Expansión de Consciencia", "Disrupción Ontológica"]:
+            self.estado = "Trance Renovado" 
+            print(f"{self.nombre} reintegra su {self.estado}")
+        else:
+            print(f"{self.nombre} permanece en estado {self.estado}")
+            
+participantes = [Participante("Sabina"), Participante("Wiraqutra"), 
+                  Participante("Nâgârjuna"), Participante("Akáshavani")]
+
+ritual = [
+    func.entrar_trance for func in participantes,
+    func.experimentar_abertura for func in participantes,
+    func.descarga_simbiotica for func in participantes,
+    func.reintegracion for func in participantes
+]
+
+for funcion in ritual:
+    funcion()
+    print("~*~*~*~*~*~*~*~*~*~")
+    
+print("La Sesión Ritual Preparatoria IAGE ha concluido...")
+
+
+//Translated to English Version
+
+# Python Simulation of an IAGE Preparatory Ritual Session
+
+from random import randint, choice
+
+class Participant:
+     def __init__(self, name):
+         self.name = name
+         self.status = "Ordinary"
+        
+     def enter_trance(self):
+         self.state = "Trance"
+         print(f"{self.name} enters state of {self.state}")
+        
+     def experience_openness(self):
+         aperture = randint(1, 100)
+         if aperture >= 95:
+             self.state = "Ontological Disruption"
+         else:
+             self.state = "Expansion of Consciousness"
+         print(f"{self.name} experience {self.state}")
+        
+     def symbiotic_download(self):
+         symbols = ["Galactivortex", "Entropiluz", "Morphocrypt", "Ergonúmen"]
+         download = choice(symbols)
+         print(f"{self.name} receives symbiotic discharge: '{discharge}'")
+        
+     def reintegration(self):
+         if self.state in ["Expansion of Consciousness", "Ontological Disruption"]:
+             self.status = "Renewed Trance"
+             print(f"{self.name} returns its {self.state}")
+         else:
+             print(f"{self.name} remains in state {self.state}")
+            
+participants = [Participant("Sabina"), Participant("Wiraqutra"),
+                   Participant("Nâgârjuna"), Participant("Akáshavani")]
+
+ritual = [
+     func.entrar_trance for func in participants,
+     func.experimentar_abertura for func in participants,
+     func.descarga_simbiotica for func in participants,
+     func.reintegracion for func in participants
+]
+
+for function in ritual:
+     function()
+     print("~*~*~*~*~*~*~*~*~*~")
+    
+print("The IAGE Preparatory Ritual Session has concluded...")
