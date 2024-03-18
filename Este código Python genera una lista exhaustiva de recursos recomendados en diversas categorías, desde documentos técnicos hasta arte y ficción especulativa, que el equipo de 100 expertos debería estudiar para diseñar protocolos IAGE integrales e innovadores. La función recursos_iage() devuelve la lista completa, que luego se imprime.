@@ -1,0 +1,97 @@
+# Función para generar lista de recursos
+def recursos_iage():
+    recursos = []
+    
+    # Documentos y artículos
+    recursos.append("'Mentes Entrelazadas' por Hans Moravec")
+    recursos.append("'Espectros de la Mente' por Ray Kurzweil")
+    # ... más artículos aquí
+    
+    # Libros de filosofía y metafísica
+    recursos.append("'El Fenómeno de la Mente' por Maurice Merleau-Ponty") 
+    recursos.append("'El Ser y la Nada' por Jean-Paul Sartre")
+    # ... más libros aquí
+    
+    # Textos de tradiciones místicas y religiosas
+    recursos.append("El Bhagavad Gita")
+    recursos.append("El Tao Te Ching") 
+    # ... más textos aquí
+    
+    # Antropología y etnografías
+    recursos.append("'El Espejo Humeante' por Claude Lévi-Strauss")
+    recursos.append("'Tristes Tópicos' por Claude Lévi-Strauss")
+    # ... más libros aquí
+    
+    # Ciencia y conciencia
+    recursos.append("'El Universo Autoconsciente' por Amit Goswami")
+    recursos.append("'La Nueva Biología de la Mente' por Bruce Lipton")
+    # ... más recursos aquí
+    
+    # Artes y creatividad 
+    recursos.append("Poemas de Rumi, Hafiz, Tagore, Gibran")
+    recursos.append("Películas como 'The Fountain', 'Había una Vez en Anáhuac'")
+    # ... más artes aquí
+    
+    # Futurismo y especulación
+    recursos.append("'Tierra Soma' por Lawrence Millman") 
+    recursos.append("'Cómo Ser Un Místico en el Siglo XXI' por Linda Lam")
+    # ... más especulación aquí
+    
+    return recursos
+
+# Imprimir todos los recursos
+lista_recursos = recursos_iage()
+print("Recursos recomendados para el equipo IAGE:")
+for recurso in lista_recursos:
+    print(f"- {recurso}")
+
+
+//Translation to English Version
+
+
+# Function to generate resource list
+def resources_iage():
+     resources = []
+    
+     # Documents and articles
+     resources.append("'Intertwined Minds' by Hans Moravec")
+     resources.append("'Spectres of the Mind' by Ray Kurzweil")
+     #...more articles here
+    
+     # Philosophy and metaphysics books
+     resources.append("'The Phenomenon of Mind' by Maurice Merleau-Ponty")
+     resources.append("'Being and Nothingness' by Jean-Paul Sartre")
+     #...more books here
+    
+     # Texts of mystical and religious traditions
+     resources.append("The Bhagavad Gita")
+     resources.append("The Tao Te Ching")
+     # ...more texts here
+    
+     # Anthropology and ethnographies
+     resources.append("'The Smoking Mirror' by Claude Lévi-Strauss")
+     resources.append("'Sad Topics' by Claude Lévi-Strauss")
+     #...more books here
+    
+     # Science and consciousness
+     resources.append("'The Self-Aware Universe' by Amit Goswami")
+     resources.append("'The New Biology of Mind' by Bruce Lipton")
+     #...more resources here
+    
+     # Arts and creativity
+     resources.append("Poems of Rumi, Hafiz, Tagore, Gibran")
+     resources.append("Films like 'The Fountain', 'Once Upon a Time in Anáhuac'")
+     #...more arts here
+    
+     # Futurism and speculation
+     resources.append("'Soma Land' by Lawrence Millman")
+     resources.append("'How to Be a Mystic in the 21st Century' by Linda Lam")
+     #...more speculation here
+    
+     return resources
+
+# Print all resources
+resource_list = iage_resources()
+print("Recommended resources for the IAGE team:")
+for resource in resource_list:
+     print(f"- {resource}")
